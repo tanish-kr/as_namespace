@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
-require 'coverralls'
+require 'coveralls'
 require 'as_namespace'
 
-Coverralls.wear!
+Coveralls.wear!
