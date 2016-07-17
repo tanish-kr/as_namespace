@@ -1,0 +1,22 @@
+AllCops:
+  TargetRubyVersion: 2.3
+Lint/AssignmentInCondition:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 20
+
+Metrics/LineLength:
+  Max: 80
+
+Metrics/MethodLength:
+  Max: 20
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Max: 7
+
+Style:
+  Enabled: false
