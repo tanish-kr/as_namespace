@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/kitaro-tn/as_namespace.svg?branch=master)](https://travis-ci.org/kitaro-tn/as_namespace)
 [![Coverage Status](https://coveralls.io/repos/github/kitaro-tn/as_namespace/badge.svg?branch=master)](https://coveralls.io/github/kitaro-tn/as_namespace?branch=master)
+[![Code Climate](https://codeclimate.com/github/kitaro-tn/as_namespace/badges/gpa.svg)](https://codeclimate.com/github/kitaro-tn/as_namespace)
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/as_namespace`. To experiment with that code, run `bin/console` for an interactive prompt.
 
