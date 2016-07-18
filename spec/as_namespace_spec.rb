@@ -8,7 +8,7 @@ describe AsNamespace do
 
   it 'is abbreviated name' do
     test_class = TestClass
-    expect(test_class.instance_methods(false)).to include(:grand)
+    expect(test_class.instance_methods(false)).not_to include(:grand)
     expect(test_class.const_defined?(:CHILD)).to be true
     expect(test_class.new.grandson).to eq("Grandson")
     expect(test_class.new.child).to eq("Child")
