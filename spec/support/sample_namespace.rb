@@ -26,8 +26,8 @@ class TestClass
 
   include AsNamespace
 
-  as_namespace module_obj: Parent::Child::Grandson, alias_val: :grand
-  as_namespace module_obj: Parent::Child, alias_val: :CHILD
+  as_namespace Parent::Child::Grandson, :grand
+  as_namespace Parent::Child, :CHILD
 
   attr_reader :grandson, :child
 

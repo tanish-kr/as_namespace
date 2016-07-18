@@ -10,18 +10,19 @@ module AsNamespace
 
     ##
     # @param [Module] module_obj
-    # @param [Object] alias_val
-    def as_namespace(module_obj:, alias_val:)
+    # @param [String] alias_val
+    def as_namespace(module_obj, alias_val)
       @module_obj = module_obj
       @alias_val = alias_val
       if (alias_val =~ /^[[:upper:]]/).nil?
         self.class_eval <<-EOS, __FILE__, __LINE__ + 1
-          def #{alias_val}
+          private def #{alias_val}
             #{module_obj}
           end
         EOS
       else
         self.const_set(alias_val, module_obj)
+        self.private_constant(alias_val)
       end
     end
 
